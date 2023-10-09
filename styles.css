@@ -36,6 +36,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid #7f45e2;
+  border-radius: 10px;
 }
 
 input[type="text"] {
@@ -94,7 +96,10 @@ button:hover {
     0px 4px 6px 0px rgba(0, 0, 0, 0.1), 0px 7px 7px 0px rgba(0, 0, 0, 0.04),
     0px 11px 7px 0px rgba(0, 0, 0, 0.01);
 }
-
+.btn {
+  height: 64px;
+  width: 64px;
+}
 .action {
   background: linear-gradient(
       180deg,
@@ -106,4 +111,43 @@ button:hover {
     0px 0px 2px 0px rgba(0, 0, 0, 0.29), 0px 2px 4px 0px rgba(0, 0, 0, 0.26),
     0px 4px 6px 0px rgba(0, 0, 0, 0.1), 0px 7px 7px 0px rgba(0, 0, 0, 0.04),
     0px 11px 7px 0px rgba(0, 0, 0, 0.01);
+}
+
+@media (max-width: 370px) {
+  .calculator {
+    width: 200px;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 52px;
+  }
+  #btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 52px;
+  }
+}
+@media (max-width: 280px) {
+  .calculator {
+    width: 150px;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+  }
+  #btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+  }
 }
